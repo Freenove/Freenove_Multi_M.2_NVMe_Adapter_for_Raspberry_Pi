@@ -1,1 +1,1 @@
-Freenove_PCIe_HUB_for_Raspberry_Pi
+Freenove_Multi_M.2_NVMe_Adapter_for_Raspberry_Pi
