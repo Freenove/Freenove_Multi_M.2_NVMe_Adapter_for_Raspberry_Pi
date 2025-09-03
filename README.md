@@ -2,10 +2,10 @@
 > A multi-interface solid-state drive adapter that uses the NVMe protocol and multiple M.2 interfaces, suitable for Raspberry PI 5
 
 * Freenove Quad M.2 NVMe Adapter for Raspberry Pi
-<img src='Picture/4-Slot SSD Adapter Board.png' width='80%'/>
+<img src='Picture/4-Slot SSD Adapter Board.png' width='50%'/>
 
 * Freenove Dual M.2 NVMe Adapter for Raspberry Pi
-<img src='Picture/2-Slot SSD Adapter Board.png' width='80%'/>
+<img src='Picture/2-Slot SSD Adapter Board.png' width='50%'/>
 
 ### Download
 
