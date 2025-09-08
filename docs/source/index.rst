@@ -35,3 +35,4 @@ This product provides the following online documents.
 
    fnk0105/codes/Main.rst
    fnk0105/codes/NAS.rst
+   fnk0105/codes/AI.rst
