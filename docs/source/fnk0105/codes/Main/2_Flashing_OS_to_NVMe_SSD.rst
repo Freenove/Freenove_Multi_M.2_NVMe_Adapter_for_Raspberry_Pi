@@ -78,7 +78,9 @@ Inner TAB: Secures a 2280 SSD on the front side.
 .. image:: ../_static/imgs/2_Flashing_OS_to_NVMe_SSD/Chapter02_11.png
     :align: center
 
-The 2-Slot SSD Adapter Board has only one Snap-off TAB (:combo:`red font-bolder:Removing the TAB will permanently disable 2280 SSD installation`).
+.. note::
+    
+    The 2-Slot SSD Adapter Board has only one Snap-off TAB (:combo:`red font-bolder:Removing the TAB will permanently disable 2280 SSD installation`).
 
 **If you have any concerns, please feel free to contact us via** support@freenove.com
 
@@ -92,221 +94,258 @@ For assembly steps of the 2-Slot SSD Adapter Board, click :ref:`HERE <fnk0105/co
 2.3.1 Assembling 4-Slot SSD Adapter Board
 ===========================================
 
-The 4-Slot SSD Adapter Board can be assembled either :ref:`above <fnk0105/codes/main/2_flashing_os_to_nvme_ssd:assembling 4-slot ssd adapter board above the raspberry pi 5>` or :ref:`below <fnk0105/codes/main/2_flashing_os_to_nvme_ssd:assembling 4-slot ssd adapter board below the raspberry pi 5>` the Raspberry Pi 5. You can install it in the way you prefer
+The 4-Slot SSD Adapter Board can be assembled either :ref:`above <above1>` or :ref:`below <below1>` the Raspberry Pi 5. You can install it in the way you prefer
 
-Assembling 4-Slot SSD Adapter Board above the Raspberry Pi 5
-------------------------------------------------------------------------------------------
+.. _above1:
+
+Assembling above the Raspberry Pi 5
+-----------------------------------------------
 
 .. table:: 
     :align: center
-    :width: 90%
     :class: table-line
+    :width: 80%
 
     +---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-    | 1. Connect the cable to Raspberry Pi 5. (:combo:`red font-bolder:Pay attention to the cable orientation. The side with contact pins faces the inner of the Raspberry Pi.`)                                                                                    |
+    | 1. Connect the cable to Raspberry Pi 5.:red:`(Caution: Open the FPC latch gently to prevent damage that may cause loosening of the FPC cable connection. The red arrow indicates the orientation of the contacts.)`                                           |
     |                                                                                                                                                                                                                                                               |
-    | |Chapter02_12|                                                                                                                                                                                                                                                |
+    | |Chapter02_69|                                                                                                                                                                                                                                                |
     +---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
     | 2. Stack two M2.5x12+4 single-pass brass standoffs together, insert them into one mounting hole of the Raspberry Pi, and secure with a single-pass standoff; repeat this process for the remaining three holes.                                               |
     |                                                                                                                                                                                                                                                               |
-    | |Chapter02_13|                                                                                                                                                                                                                                                |
+    | |Chapter02_70|                                                                                                                                                                                                                                                |
     +---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
     | 3. Tilt to insert the SSD into the board, and fix it with an M2.5x3 screw.                                                                                                                                                                                    |
     |                                                                                                                                                                                                                                                               |
-    |                                                                                                                                                                                                                                                               |
-    | |Chapter02_14|                                                                                                                                                                                                                                                |
+    | |Chapter02_71|                                                                                                                                                                                                                                                |
     |                                                                                                                                                                                                                                                               |
     | The 4-Slot SSD Adapter Board features a dual-sided layout (two slots per side), supporting simultaneous connection of four NVMe SSDs. It is compatible with 2232/2242/2260/2280 form factors, enabling high-density storage expansion in a compact footprint. |
     |                                                                                                                                                                                                                                                               |
-    | |Chapter02_15|                                                                                                                                                                                                                                                |
+    | |Chapter02_72|                                                                                                                                                                                                                                                |
     +---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-    | 4. Connect the other end of the cable to adapter board.                                                                                                                                                                                                       |
+    | 4. Connect the other end of the cable to adapter board. :red:`(Caution: Open the FPC latch gently to prevent damage that may cause loosening of the FPC cable connection. The contacts should face the bottom.)`                                              |
     |                                                                                                                                                                                                                                                               |
-    | |Chapter02_16|                                                                                                                                                                                                                                                |
+    | |Chapter02_73|                                                                                                                                                                                                                                                |
     +---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
     | 5. Fix the adapter board to the Raspberry Pi 5 with four M2.5x3 screws.                                                                                                                                                                                       |
     |                                                                                                                                                                                                                                                               |
-    | |Chapter02_17|                                                                                                                                                                                                                                                |
+    | |Chapter02_74|                                                                                                                                                                                                                                                |
     +---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
     | 6. Consistently connect the adapter board's 5V and GND pins to the corresponding 5V/GND pins on the Raspberry Pi 5 using jumper wires. (Refer to Raspberry Pi 5 GPIO pinout diagram).                                                                         |
     |                                                                                                                                                                                                                                                               |
     | https://www.raspberrypi.com/documentation/computers/raspberry-pi.html#gpio                                                                                                                                                                                    |
     |                                                                                                                                                                                                                                                               |
-    | |Chapter02_18|                                                                                                                                                                                                                                                |
+    | |Chapter02_75|                                                                                                                                                                                                                                                |
     |                                                                                                                                                                                                                                                               |
     | The 4-Slot SSD Adapter Board also supports external power via its onboard USB-C port (5V/3A recommended).                                                                                                                                                     |
     |                                                                                                                                                                                                                                                               |
-    | |Chapter02_19|                                                                                                                                                                                                                                                |
+    | |Chapter02_76|                                                                                                                                                                                                                                                |
     |                                                                                                                                                                                                                                                               |
-    | :combo:`red font-bolder:Note: Powering the adapter board from USB-C and jumper wire simultaneously is NOT supported!`                                                                                                                                         |
+    | :red:`Note: Powering the adapter board from USB-C and jumper wire simultaneously is NOT supported!                                                                                                                                                            |
+    | In most cases, no additional power connection is required. However, for SSDs with higher power consumption, it is recommended to connect auxiliary power to ensure sufficient power delivery and stable operation.`                                           |
     +---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-.. |Chapter02_12| image:: ../_static/imgs/2_Flashing_OS_to_NVMe_SSD/Chapter02_12.png
-.. |Chapter02_13| image:: ../_static/imgs/2_Flashing_OS_to_NVMe_SSD/Chapter02_13.png
-.. |Chapter02_14| image:: ../_static/imgs/2_Flashing_OS_to_NVMe_SSD/Chapter02_14.png
-.. |Chapter02_15| image:: ../_static/imgs/2_Flashing_OS_to_NVMe_SSD/Chapter02_15.png
-.. |Chapter02_16| image:: ../_static/imgs/2_Flashing_OS_to_NVMe_SSD/Chapter02_16.png
-.. |Chapter02_17| image:: ../_static/imgs/2_Flashing_OS_to_NVMe_SSD/Chapter02_17.png
-.. |Chapter02_18| image:: ../_static/imgs/2_Flashing_OS_to_NVMe_SSD/Chapter02_18.png
-.. |Chapter02_19| image:: ../_static/imgs/2_Flashing_OS_to_NVMe_SSD/Chapter02_19.png
+.. |Chapter02_69| image:: ../_static/imgs/2_Flashing_OS_to_NVMe_SSD/Chapter02_69.png
+.. |Chapter02_70| image:: ../_static/imgs/2_Flashing_OS_to_NVMe_SSD/Chapter02_70.png
+.. |Chapter02_71| image:: ../_static/imgs/2_Flashing_OS_to_NVMe_SSD/Chapter02_71.png
+.. |Chapter02_72| image:: ../_static/imgs/2_Flashing_OS_to_NVMe_SSD/Chapter02_72.png
+.. |Chapter02_73| image:: ../_static/imgs/2_Flashing_OS_to_NVMe_SSD/Chapter02_73.png
+.. |Chapter02_74| image:: ../_static/imgs/2_Flashing_OS_to_NVMe_SSD/Chapter02_74.png
+.. |Chapter02_75| image:: ../_static/imgs/2_Flashing_OS_to_NVMe_SSD/Chapter02_75.png
+.. |Chapter02_76| image:: ../_static/imgs/2_Flashing_OS_to_NVMe_SSD/Chapter02_76.png
 
-Assembling 4-Slot SSD Adapter Board below the Raspberry Pi 5
-------------------------------------------------------------------------------------------------
+.. _below1:
+
+Assembling below the Raspberry Pi 5
+-------------------------------------------
 
 .. table:: 
     :align: center
-    :width: 90%
     :class: table-line
+    :width: 80%
 
     +---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-    | 1. Connect the cable to Raspberry Pi 5. (:combo:`red font-bolder:Pay attention to the cable orientation. The side with contact pins faces the inner of the Raspberry Pi.`)                                                                                    |
+    | 1. Connect the cable to Raspberry Pi 5. :red:`(Caution: Open the FPC latch gently to prevent damage that may cause loosening of the FPC cable connection. The red arrow indicates the orientation of the contacts.)`                                          |
     |                                                                                                                                                                                                                                                               |
-    | |Chapter02_20|                                                                                                                                                                                                                                                |
+    | |Chapter02_77|                                                                                                                                                                                                                                                |
     +---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
     | 2. Tilt to insert the SSD into the board, and fix it with an M2.5x3 screw.                                                                                                                                                                                    |
     |                                                                                                                                                                                                                                                               |
-    | |Chapter02_21|                                                                                                                                                                                                                                                |
+    | |Chapter02_78|                                                                                                                                                                                                                                                |
     |                                                                                                                                                                                                                                                               |
     | The 4-Slot SSD Adapter Board features a dual-sided layout (two slots per side), supporting simultaneous connection of four NVMe SSDs. It is compatible with 2232/2242/2260/2280 form factors, enabling high-density storage expansion in a compact footprint. |
     |                                                                                                                                                                                                                                                               |
-    | |Chapter02_22|                                                                                                                                                                                                                                                |
+    | |Chapter02_79|                                                                                                                                                                                                                                                |
     +---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
     | 3. Insert an M2.5x12+4 single-pass brass standoffs into one mounting hole of the adapter board, and secure with a single-pass standoff; repeat this process for the remaining three holes.                                                                    |
     |                                                                                                                                                                                                                                                               |
-    | |Chapter02_23|                                                                                                                                                                                                                                                |
+    | |Chapter02_80|                                                                                                                                                                                                                                                |
     +---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-    | 4. Connect the other end of the cable to adapter board.                                                                                                                                                                                                       |
+    | 4. Connect the other end of the cable to adapter board. :red:`(Caution: Open the FPC latch gently to prevent damage that may cause loosening of the FPC cable connection. The contacts should face the bottom.)`                                              |
     |                                                                                                                                                                                                                                                               |
-    | |Chapter02_24|                                                                                                                                                                                                                                                |
+    | |Chapter02_81|                                                                                                                                                                                                                                                |
     +---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
     | 5. Put the adapter board below the Raspberry pi and fix with M2.5x3 screws.                                                                                                                                                                                   |
     |                                                                                                                                                                                                                                                               |
-    |                                                                                                                                                                                                                                                               |
-    | |Chapter02_25|                                                                                                                                                                                                                                                |
+    | |Chapter02_82|                                                                                                                                                                                                                                                |
     +---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
     | 6. Consistently connect the adapter board's 5V and GND pins to the corresponding 5V/GND pins on the Raspberry Pi 5 using jumper wires. (Refer to Raspberry Pi 5 GPIO pinout diagram).                                                                         |
     |                                                                                                                                                                                                                                                               |
     | https://www.raspberrypi.com/documentation/computers/raspberry-pi.html#gpio                                                                                                                                                                                    |
     |                                                                                                                                                                                                                                                               |
-    |                                                                                                                                                                                                                                                               |
-    | |Chapter02_26|                                                                                                                                                                                                                                                |
+    | |Chapter02_83|                                                                                                                                                                                                                                                |
     |                                                                                                                                                                                                                                                               |
     | The 4-Slot SSD Adapter Board also supports external power via its onboard USB-C port (5V/3A recommended).                                                                                                                                                     |
     |                                                                                                                                                                                                                                                               |
-    | |Chapter02_27|                                                                                                                                                                                                                                                |
+    | |Chapter02_84|                                                                                                                                                                                                                                                |
     |                                                                                                                                                                                                                                                               |
-    | :combo:`red font-bolder:Note: Powering the adapter board from USB-C and jumper wire simultaneously is NOT supported!`                                                                                                                                         |
+    | :red:`Note: Powering the adapter board from USB-C and jumper wire simultaneously is NOT supported!`                                                                                                                                                           |
+    |                                                                                                                                                                                                                                                               |
+    | :red:`In most cases, no additional power connection is required. However, for SSDs with higher power consumption, it is recommended to connect auxiliary power to ensure sufficient power delivery and stable operation.`                                     |
     +---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-.. |Chapter02_20| image:: ../_static/imgs/2_Flashing_OS_to_NVMe_SSD/Chapter02_20.png
-.. |Chapter02_21| image:: ../_static/imgs/2_Flashing_OS_to_NVMe_SSD/Chapter02_21.png
-.. |Chapter02_22| image:: ../_static/imgs/2_Flashing_OS_to_NVMe_SSD/Chapter02_22.png
-.. |Chapter02_23| image:: ../_static/imgs/2_Flashing_OS_to_NVMe_SSD/Chapter02_23.png
-.. |Chapter02_24| image:: ../_static/imgs/2_Flashing_OS_to_NVMe_SSD/Chapter02_24.png
-.. |Chapter02_25| image:: ../_static/imgs/2_Flashing_OS_to_NVMe_SSD/Chapter02_25.png
-.. |Chapter02_26| image:: ../_static/imgs/2_Flashing_OS_to_NVMe_SSD/Chapter02_26.png
-.. |Chapter02_27| image:: ../_static/imgs/2_Flashing_OS_to_NVMe_SSD/Chapter02_27.png
+.. |Chapter02_77| image:: ../_static/imgs/2_Flashing_OS_to_NVMe_SSD/Chapter02_77.png
+.. |Chapter02_78| image:: ../_static/imgs/2_Flashing_OS_to_NVMe_SSD/Chapter02_78.png
+.. |Chapter02_79| image:: ../_static/imgs/2_Flashing_OS_to_NVMe_SSD/Chapter02_79.png
+.. |Chapter02_80| image:: ../_static/imgs/2_Flashing_OS_to_NVMe_SSD/Chapter02_80.png
+.. |Chapter02_81| image:: ../_static/imgs/2_Flashing_OS_to_NVMe_SSD/Chapter02_81.png
+.. |Chapter02_82| image:: ../_static/imgs/2_Flashing_OS_to_NVMe_SSD/Chapter02_82.png
+.. |Chapter02_83| image:: ../_static/imgs/2_Flashing_OS_to_NVMe_SSD/Chapter02_83.png
+.. |Chapter02_84| image:: ../_static/imgs/2_Flashing_OS_to_NVMe_SSD/Chapter02_84.png
 
 2.3.2 Assembling 2-Slot SSD Adapter Board
-==================================================
+=================================================
 
-The 2-Slot SSD Adapter Board can be assembled either :ref:`above <fnk0105/codes/main/2_flashing_os_to_nvme_ssd:assembling 2-slot ssd adapter board above the raspberry pi 5>` or :ref:`below <fnk0105/codes/main/2_flashing_os_to_nvme_ssd:assembling 2-slot ssd adapter board below the raspberry pi 5>` the Raspberry Pi 5. You can install it in the way you prefer. 
+The 2-Slot SSD Adapter Board can be assembled either :ref:`above <above2>` or :ref:`below <below2>` the Raspberry Pi 5. You can install it in the way you prefer. 
 
-Assembling 2-Slot SSD Adapter Board above the Raspberry Pi 5
---------------------------------------------------------------------------------------------------
+.. _above2:
 
-.. table:: 
-    :align: center
-    :width: 90%
-    :class: table-line
-
-    +-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-    | 1. Connect the cable to Raspberry Pi 5.(:combo:`red font-bolder:Pay attention to the cable orientation. The side with contact pins faces the inner of the Raspberry Pi.`)                                       |
-    |                                                                                                                                                                                                                 |
-    | |Chapter02_28|                                                                                                                                                                                                  |
-    +-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-    | 2. Stack two M2.5x12+4 single-pass brass standoffs together, insert them into one mounting hole of the Raspberry Pi, and secure with a single-pass standoff; repeat this process for the remaining three holes. |
-    |                                                                                                                                                                                                                 |
-    | |Chapter02_29|                                                                                                                                                                                                  |
-    +-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-    | 3. Tilt to insert the SSD into the board, and fix it with an M2.5x3 screw.                                                                                                                                      |
-    |                                                                                                                                                                                                                 |
-    | |Chapter02_30|                                                                                                                                                                                                  |
-    |                                                                                                                                                                                                                 |
-    | The 2-Slot SSD Adapter Board supports simultaneous connection of two NVMe SSDs, compatible with 2232/2242/2260/2280 form factors.                                                                               |
-    |                                                                                                                                                                                                                 |
-    | |Chapter02_31|                                                                                                                                                                                                  |
-    +-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-    | 4. Connect the other end of the cable to adapter board.                                                                                                                                                         |
-    |                                                                                                                                                                                                                 |
-    | |Chapter02_32|                                                                                                                                                                                                  |
-    +-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-    | 5. Fix the adapter board to the Raspberry Pi 5 with four M2.5x3 screws.                                                                                                                                         |
-    |                                                                                                                                                                                                                 |
-    | |Chapter02_33|                                                                                                                                                                                                  |
-    +-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-    | 6. Consistently connect the adapter board's 5V and GND pins to the corresponding 5V/GND pins on the Raspberry Pi 5 using jumper wires. (Refer to Raspberry Pi 5 GPIO pinout diagram).                           |
-    |                                                                                                                                                                                                                 |
-    | https://www.raspberrypi.com/documentation/computers/raspberry-pi.html#gpio                                                                                                                                      |
-    |                                                                                                                                                                                                                 |
-    | |Chapter02_34|                                                                                                                                                                                                  |
-    +-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-
-.. |Chapter02_28| image:: ../_static/imgs/2_Flashing_OS_to_NVMe_SSD/Chapter02_28.png
-.. |Chapter02_29| image:: ../_static/imgs/2_Flashing_OS_to_NVMe_SSD/Chapter02_29.png
-.. |Chapter02_30| image:: ../_static/imgs/2_Flashing_OS_to_NVMe_SSD/Chapter02_30.png
-.. |Chapter02_31| image:: ../_static/imgs/2_Flashing_OS_to_NVMe_SSD/Chapter02_31.png
-.. |Chapter02_32| image:: ../_static/imgs/2_Flashing_OS_to_NVMe_SSD/Chapter02_32.png
-.. |Chapter02_33| image:: ../_static/imgs/2_Flashing_OS_to_NVMe_SSD/Chapter02_33.png
-.. |Chapter02_34| image:: ../_static/imgs/2_Flashing_OS_to_NVMe_SSD/Chapter02_34.png
-
-Assembling 2-Slot SSD Adapter Board below the Raspberry Pi 5
---------------------------------------------------------------------------------------------------
+Assembling above the Raspberry Pi 5
+-----------------------------------------------
 
 .. table:: 
     :align: center
-    :width: 90%
     :class: table-line
+    :width: 80%
 
-    +--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-    | 1. Connect the cable to Raspberry Pi 5.(:combo:`red font-bolder:Pay attention to the cable orientation. The side with contact pins faces the inner of the Raspberry Pi.`)                  |
-    |                                                                                                                                                                                            |
-    | |Chapter02_35|                                                                                                                                                                             |
-    +--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-    | 2. Tilt to insert the SSD into the board, and fix it with an M2.5x3 screw.                                                                                                                 |
-    |                                                                                                                                                                                            |
-    | |Chapter02_36|                                                                                                                                                                             |
-    |                                                                                                                                                                                            |
-    | The 2-Slot SSD Adapter Board supports simultaneous connection of two NVMe SSDs, compatible with 2232/2242/2260/2280 form factors.                                                          |
-    |                                                                                                                                                                                            |
-    | |Chapter02_37|                                                                                                                                                                             |
-    +--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-    | 3. Insert an M2.5xS12+4 single-pass brass standoffs into one mounting hole of the adapter board, and secure with a single-pass standoff; repeat this process for the remaining three holes.|
-    |                                                                                                                                                                                            |
-    | |Chapter02_38|                                                                                                                                                                             |
-    +--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-    | 4. Connect the other end of the cable to adapter board.                                                                                                                                    |
-    |                                                                                                                                                                                            |
-    | |Chapter02_39|                                                                                                                                                                             |
-    +--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-    | 5. Put the adapter board below the Raspberry pi and fix with M2.5x3 screws.                                                                                                                |
-    |                                                                                                                                                                                            |
-    | |Chapter02_40|                                                                                                                                                                             |
-    +--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-    | 6. Consistently connect the adapter board's 5V and GND pins to the corresponding 5V/GND pins on the Raspberry Pi 5 using jumper wires. (Refer to Raspberry Pi 5 GPIO pinout diagram).      |
-    |                                                                                                                                                                                            |
-    | https://www.raspberrypi.com/documentation/computers/raspberry-pi.html#gpio                                                                                                                 |
-    |                                                                                                                                                                                            |
-    | |Chapter02_41|                                                                                                                                                                             |
-    +--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+    +---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+    | 1. Connect the cable to Raspberry Pi 5. :red:`(Caution: Open the FPC latch gently to prevent damage that may cause loosening of the FPC cable connection. The red arrow indicates the orientation of the contacts.)`      |
+    |                                                                                                                                                                                                                           |
+    | |Chapter02_85|                                                                                                                                                                                                            |
+    +---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+    | 2. Stack two M2.5x12+4 single-pass brass standoffs together, insert them into one mounting hole of the Raspberry Pi, and secure with a single-pass standoff; repeat this process for the remaining three holes.           |
+    |                                                                                                                                                                                                                           |
+    | |Chapter02_86|                                                                                                                                                                                                            |
+    +---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+    | 3. Tilt to insert the SSD into the board, and fix it with an M2.5x3 screw.                                                                                                                                                |
+    |                                                                                                                                                                                                                           |
+    | |Chapter02_87|                                                                                                                                                                                                            |
+    |                                                                                                                                                                                                                           |
+    | The 2-Slot SSD Adapter Board supports simultaneous connection of two NVMe SSDs, compatible with 2232/2242/2260/2280 form factors.                                                                                         |
+    |                                                                                                                                                                                                                           |
+    | |Chapter02_88|                                                                                                                                                                                                            |
+    +---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+    | 4. Connect the other end of the cable to adapter board. :red:`(Caution: Open the FPC latch gently to prevent damage that may cause loosening of the FPC cable connection. The contacts should face the bottom.)`          |
+    |                                                                                                                                                                                                                           |
+    | |Chapter02_89|                                                                                                                                                                                                            |
+    +---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+    | 5. Fix the adapter board to the Raspberry Pi 5 with four M2.5x3 screws.                                                                                                                                                   |
+    |                                                                                                                                                                                                                           |
+    | |Chapter02_90|                                                                                                                                                                                                            |
+    +---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+    | 6. Consistently connect the adapter board's 5V and GND pins to the corresponding 5V/GND pins on the Raspberry Pi 5 using jumper wires. (Refer to Raspberry Pi 5 GPIO pinout diagram).                                     |
+    |                                                                                                                                                                                                                           |
+    | https://www.raspberrypi.com/documentation/computers/raspberry-pi.html#gpio                                                                                                                                                |
+    |                                                                                                                                                                                                                           |
+    | |Chapter02_91|                                                                                                                                                                                                            |
+    |                                                                                                                                                                                                                           |
+    | :red:`In most cases, no additional power connection is required. However, for SSDs with higher power consumption, it is recommended to connect auxiliary power to ensure sufficient power delivery and stable operation.` |
+    +---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-.. |Chapter02_35| image:: ../_static/imgs/2_Flashing_OS_to_NVMe_SSD/Chapter02_35.png
-.. |Chapter02_36| image:: ../_static/imgs/2_Flashing_OS_to_NVMe_SSD/Chapter02_36.png
-.. |Chapter02_37| image:: ../_static/imgs/2_Flashing_OS_to_NVMe_SSD/Chapter02_37.png
-.. |Chapter02_38| image:: ../_static/imgs/2_Flashing_OS_to_NVMe_SSD/Chapter02_38.png
-.. |Chapter02_39| image:: ../_static/imgs/2_Flashing_OS_to_NVMe_SSD/Chapter02_39.png
-.. |Chapter02_40| image:: ../_static/imgs/2_Flashing_OS_to_NVMe_SSD/Chapter02_40.png
-.. |Chapter02_41| image:: ../_static/imgs/2_Flashing_OS_to_NVMe_SSD/Chapter02_41.png
+.. |Chapter02_85| image:: ../_static/imgs/2_Flashing_OS_to_NVMe_SSD/Chapter02_85.png
+.. |Chapter02_86| image:: ../_static/imgs/2_Flashing_OS_to_NVMe_SSD/Chapter02_86.png
+.. |Chapter02_87| image:: ../_static/imgs/2_Flashing_OS_to_NVMe_SSD/Chapter02_87.png
+.. |Chapter02_88| image:: ../_static/imgs/2_Flashing_OS_to_NVMe_SSD/Chapter02_88.png
+.. |Chapter02_89| image:: ../_static/imgs/2_Flashing_OS_to_NVMe_SSD/Chapter02_89.png
+.. |Chapter02_90| image:: ../_static/imgs/2_Flashing_OS_to_NVMe_SSD/Chapter02_90.png
+.. |Chapter02_91| image:: ../_static/imgs/2_Flashing_OS_to_NVMe_SSD/Chapter02_91.png
+
+.. _below2:
+
+Assembling below the Raspberry Pi 5
+------------------------------------------
+
+.. table:: 
+    :align: center
+    :class: table-line
+    :width: 80%
+
+    +---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+    | 1. Connect the cable to Raspberry Pi 5. :red:`(Caution: Open the FPC latch gently to prevent damage that may cause loosening of the FPC cable connection. The red arrow indicates the orientation of the contacts.)`      |
+    |                                                                                                                                                                                                                           |
+    | |Chapter02_92|                                                                                                                                                                                                            |
+    +---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+    | 2. Tilt to insert the SSD into the board, and fix it with an M2.5x3 screw.                                                                                                                                                |
+    |                                                                                                                                                                                                                           |
+    | |Chapter02_93|                                                                                                                                                                                                            |
+    |                                                                                                                                                                                                                           |
+    | The 2-Slot SSD Adapter Board supports simultaneous connection of two NVMe SSDs, compatible with 2232/2242/2260/2280 form factors.                                                                                         |
+    |                                                                                                                                                                                                                           |
+    | |Chapter02_94|                                                                                                                                                                                                            |
+    +---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+    | 3. Insert an M2.5x12+4 single-pass brass standoffs into one mounting hole of the adapter board, and secure with a single-pass standoff; repeat this process for the remaining three holes.                                |
+    |                                                                                                                                                                                                                           |
+    | |Chapter02_95|                                                                                                                                                                                                            |
+    +---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+    | 4. Connect the other end of the cable to adapter board. :red:`(Caution: Open the FPC latch gently to prevent damage that may cause loosening of the FPC cable connection. The contacts should face the bottom.)`          |
+    |                                                                                                                                                                                                                           |
+    | |Chapter02_96|                                                                                                                                                                                                            |
+    +---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+    | 5. Put the adapter board below the Raspberry pi and fix with M2.5x3 screws.                                                                                                                                               |
+    |                                                                                                                                                                                                                           |
+    | |Chapter02_97|                                                                                                                                                                                                            |
+    +---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+    | 6. Consistently connect the adapter board's 5V and GND pins to the corresponding 5V/GND pins on the Raspberry Pi 5 using jumper wires. (Refer to Raspberry Pi 5 GPIO pinout diagram).                                     |
+    |                                                                                                                                                                                                                           |
+    | https://www.raspberrypi.com/documentation/computers/raspberry-pi.html#gpio                                                                                                                                                |
+    |                                                                                                                                                                                                                           |
+    | |Chapter02_98|                                                                                                                                                                                                            |
+    |                                                                                                                                                                                                                           |
+    | :red:`In most cases, no additional power connection is required. However, for SSDs with higher power consumption, it is recommended to connect auxiliary power to ensure sufficient power delivery and stable operation.` |
+    +---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+.. |Chapter02_92| image:: ../_static/imgs/2_Flashing_OS_to_NVMe_SSD/Chapter02_92.png
+.. |Chapter02_93| image:: ../_static/imgs/2_Flashing_OS_to_NVMe_SSD/Chapter02_93.png
+.. |Chapter02_94| image:: ../_static/imgs/2_Flashing_OS_to_NVMe_SSD/Chapter02_94.png
+.. |Chapter02_95| image:: ../_static/imgs/2_Flashing_OS_to_NVMe_SSD/Chapter02_95.png
+.. |Chapter02_96| image:: ../_static/imgs/2_Flashing_OS_to_NVMe_SSD/Chapter02_96.png
+.. |Chapter02_97| image:: ../_static/imgs/2_Flashing_OS_to_NVMe_SSD/Chapter02_97.png
+.. |Chapter02_98| image:: ../_static/imgs/2_Flashing_OS_to_NVMe_SSD/Chapter02_98.png
+
+2.3.3 What to Expect on First Startup
+---------------------------------------------
+
+After assembly is complete, ensure that all cables are correctly and securely connected. Only after this is confirmed should you power on the Raspberry Pi 5. Normal operation is indicated as follows:
+
+1. RPi 5 Status LED: The green STAT LED will remain steadily illuminated. If this LED is not lit or displays any pattern other than a steady green light, it indicates that the Raspberry Pi operating system has not booted successfully. In this case, please check your Raspberry Pi hardware and OS installation separately.
+
+.. image:: ../_static/imgs/2_Flashing_OS_to_NVMe_SSD/Chapter02_99.png
+    :align: center
+
+2.SSD Adapter Board:
+
+ON LED: Steadily lit. 
+
+STA LED: Blinks in sync with the SSD's built-in activity light.
+
+.. image:: ../_static/imgs/2_Flashing_OS_to_NVMe_SSD/Chapter02_100.png
+    :align: center
+
+Should the ON indicator fail to illuminate, please check the cable connection.
+
+Important: It is imperative to utilize the onboard pin header for supplemental power when operating multiple solid-state drives to mitigate risks associated with inadequate power supply.
+
+**If you have any questions of the above, please contact us at** support@freenove.com
 
 2.4 Flashing the RPi OS to NVMe SSD
 ***********************************************

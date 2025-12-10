@@ -47,3 +47,7 @@ This model has two NVMe SSD interface, supporting two NVMe SSDs to run simultane
 - Power Supply: 3.3V, up to 3A (maximum)
 
 - Indicator Lights: Includes both power and x2 SSD status LEDs.
+  
+.. note::
+
+    :combo:`red font-bolder:The on-board power supply is enabled by the EN (Enable) signal sourced from the Raspberry Pi's PCIe interface. As a result, the PCIe cable must be connected to activate this signal and power on the board. Connecting only the external power interface or Type-C power interface, without the PCIe cable, will not enable the on-board power supply.`
